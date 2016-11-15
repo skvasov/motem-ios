@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5FB9DFCB1DDB8F0B00817A61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB9DFCA1DDB8F0B00817A61 /* AppDelegate.swift */; };
-		5FB9DFCD1DDB8F0B00817A61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB9DFCC1DDB8F0B00817A61 /* ViewController.swift */; };
-		5FB9DFD01DDB8F0B00817A61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FB9DFCE1DDB8F0B00817A61 /* Main.storyboard */; };
-		5FB9DFD21DDB8F0B00817A61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FB9DFD11DDB8F0B00817A61 /* Assets.xcassets */; };
-		5FB9DFD51DDB8F0B00817A61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FB9DFD31DDB8F0B00817A61 /* LaunchScreen.storyboard */; };
 		5FB9DFE01DDB8F0B00817A61 /* motem_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB9DFDF1DDB8F0B00817A61 /* motem_iosTests.swift */; };
 		5FB9DFEB1DDB8F0C00817A61 /* motem_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB9DFEA1DDB8F0C00817A61 /* motem_iosUITests.swift */; };
+		5FB9E0051DDB93F200817A61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FB9DFFD1DDB93F200817A61 /* Assets.xcassets */; };
+		5FB9E0061DDB93F200817A61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FB9DFFE1DDB93F200817A61 /* LaunchScreen.storyboard */; };
+		5FB9E0071DDB93F200817A61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FB9E0001DDB93F200817A61 /* Main.storyboard */; };
+		5FB9E0081DDB93F200817A61 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5FB9E0021DDB93F200817A61 /* Info.plist */; };
+		5FB9E0131DDB94A000817A61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB9E00A1DDB94A000817A61 /* AppDelegate.swift */; };
+		5FB9E0171DDB94FA00817A61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB9E0161DDB94FA00817A61 /* ViewController.swift */; };
 		C75ED11943991738DEFEAA73 /* libPods-motem-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6E564314A398BF08D3E8E7 /* libPods-motem-ios.a */; };
 /* End PBXBuildFile section */
 
@@ -37,18 +38,19 @@
 /* Begin PBXFileReference section */
 		0D6E564314A398BF08D3E8E7 /* libPods-motem-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-motem-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB9DFC71DDB8F0B00817A61 /* motem-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "motem-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FB9DFCA1DDB8F0B00817A61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5FB9DFCC1DDB8F0B00817A61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5FB9DFCF1DDB8F0B00817A61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5FB9DFD11DDB8F0B00817A61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5FB9DFD41DDB8F0B00817A61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5FB9DFD61DDB8F0B00817A61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FB9DFDB1DDB8F0B00817A61 /* motem-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "motem-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB9DFDF1DDB8F0B00817A61 /* motem_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = motem_iosTests.swift; sourceTree = "<group>"; };
 		5FB9DFE11DDB8F0B00817A61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FB9DFE61DDB8F0C00817A61 /* motem-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "motem-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB9DFEA1DDB8F0C00817A61 /* motem_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = motem_iosUITests.swift; sourceTree = "<group>"; };
 		5FB9DFEC1DDB8F0C00817A61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FB9DFFD1DDB93F200817A61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5FB9DFFF1DDB93F200817A61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5FB9E0011DDB93F200817A61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5FB9E0021DDB93F200817A61 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FB9E00A1DDB94A000817A61 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5FB9E0151DDB94C300817A61 /* motem-ios-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "motem-ios-Bridging-Header.h"; sourceTree = "<group>"; };
+		5FB9E0161DDB94FA00817A61 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ACDD7CB7AAB284668F6BF2CE /* Pods-motem-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-motem-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-motem-ios/Pods-motem-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		B8E16E2166F4FB9DAB25606B /* Pods-motem-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-motem-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-motem-ios/Pods-motem-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,12 +106,9 @@
 		5FB9DFC91DDB8F0B00817A61 /* motem-ios */ = {
 			isa = PBXGroup;
 			children = (
-				5FB9DFCA1DDB8F0B00817A61 /* AppDelegate.swift */,
-				5FB9DFCC1DDB8F0B00817A61 /* ViewController.swift */,
-				5FB9DFCE1DDB8F0B00817A61 /* Main.storyboard */,
-				5FB9DFD11DDB8F0B00817A61 /* Assets.xcassets */,
-				5FB9DFD31DDB8F0B00817A61 /* LaunchScreen.storyboard */,
-				5FB9DFD61DDB8F0B00817A61 /* Info.plist */,
+				5FB9DFF81DDB93F200817A61 /* Classes */,
+				5FB9DFFB1DDB93F200817A61 /* Resources */,
+				5FB9DFFC1DDB93F200817A61 /* Supporting Files */,
 			);
 			path = "motem-ios";
 			sourceTree = "<group>";
@@ -130,6 +129,90 @@
 				5FB9DFEC1DDB8F0C00817A61 /* Info.plist */,
 			);
 			path = "motem-iosUITests";
+			sourceTree = "<group>";
+		};
+		5FB9DFF81DDB93F200817A61 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5FB9E00A1DDB94A000817A61 /* AppDelegate.swift */,
+				5FB9E00B1DDB94A000817A61 /* Categories */,
+				5FB9E00C1DDB94A000817A61 /* Middleware */,
+				5FB9E00D1DDB94A000817A61 /* Models */,
+				5FB9E00E1DDB94A000817A61 /* Shared */,
+				5FB9E0111DDB94A000817A61 /* User Interface */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5FB9DFFB1DDB93F200817A61 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5FB9DFFC1DDB93F200817A61 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5FB9DFFD1DDB93F200817A61 /* Assets.xcassets */,
+				5FB9DFFE1DDB93F200817A61 /* LaunchScreen.storyboard */,
+				5FB9E0001DDB93F200817A61 /* Main.storyboard */,
+				5FB9E0021DDB93F200817A61 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5FB9E00B1DDB94A000817A61 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		5FB9E00C1DDB94A000817A61 /* Middleware */ = {
+			isa = PBXGroup;
+			children = (
+				5FB9E0151DDB94C300817A61 /* motem-ios-Bridging-Header.h */,
+			);
+			path = Middleware;
+			sourceTree = "<group>";
+		};
+		5FB9E00D1DDB94A000817A61 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5FB9E00E1DDB94A000817A61 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				5FB9E00F1DDB94A000817A61 /* View Controllers */,
+				5FB9E0101DDB94A000817A61 /* Views */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		5FB9E00F1DDB94A000817A61 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		5FB9E0101DDB94A000817A61 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5FB9E0111DDB94A000817A61 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				5FB9E0161DDB94FA00817A61 /* ViewController.swift */,
+			);
+			path = "User Interface";
 			sourceTree = "<group>";
 		};
 		63FA2EDE6D3FD9CBAC93AED9 /* Frameworks */ = {
@@ -221,6 +304,7 @@
 					5FB9DFC61DDB8F0B00817A61 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = Y2V6NG4VN2;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					5FB9DFDA1DDB8F0B00817A61 = {
@@ -262,9 +346,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FB9DFD51DDB8F0B00817A61 /* LaunchScreen.storyboard in Resources */,
-				5FB9DFD21DDB8F0B00817A61 /* Assets.xcassets in Resources */,
-				5FB9DFD01DDB8F0B00817A61 /* Main.storyboard in Resources */,
+				5FB9E0081DDB93F200817A61 /* Info.plist in Resources */,
+				5FB9E0071DDB93F200817A61 /* Main.storyboard in Resources */,
+				5FB9E0051DDB93F200817A61 /* Assets.xcassets in Resources */,
+				5FB9E0061DDB93F200817A61 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,8 +422,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FB9DFCD1DDB8F0B00817A61 /* ViewController.swift in Sources */,
-				5FB9DFCB1DDB8F0B00817A61 /* AppDelegate.swift in Sources */,
+				5FB9E0171DDB94FA00817A61 /* ViewController.swift in Sources */,
+				5FB9E0131DDB94A000817A61 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,20 +459,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5FB9DFCE1DDB8F0B00817A61 /* Main.storyboard */ = {
+		5FB9DFFE1DDB93F200817A61 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5FB9DFCF1DDB8F0B00817A61 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5FB9DFD31DDB8F0B00817A61 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5FB9DFD41DDB8F0B00817A61 /* Base */,
+				5FB9DFFF1DDB93F200817A61 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5FB9E0001DDB93F200817A61 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FB9E0011DDB93F200817A61 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -489,11 +574,14 @@
 			baseConfigurationReference = ACDD7CB7AAB284668F6BF2CE /* Pods-motem-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = Y2V6NG4VN2;
-				INFOPLIST_FILE = "motem-ios/Info.plist";
+				INFOPLIST_FILE = "motem-ios/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mobexs.motem-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "motem-ios/Classes/Middleware/motem-ios-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -503,11 +591,13 @@
 			baseConfigurationReference = B8E16E2166F4FB9DAB25606B /* Pods-motem-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = Y2V6NG4VN2;
-				INFOPLIST_FILE = "motem-ios/Info.plist";
+				INFOPLIST_FILE = "motem-ios/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mobexs.motem-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "motem-ios/Classes/Middleware/motem-ios-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
