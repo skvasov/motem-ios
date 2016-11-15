@@ -245,6 +245,7 @@
 				5FB9DFC51DDB8F0B00817A61 /* Resources */,
 				0E7C618655DB17AFA6851CC7 /* [CP] Embed Pods Frameworks */,
 				9CF4BB6F8D46621099EC6AD7 /* [CP] Copy Pods Resources */,
+				5FB9E0181DDB956500817A61 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -384,6 +385,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-motem-ios/Pods-motem-ios-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		5FB9E0181DDB956500817A61 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "PREV_VERSION=`/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${INFOPLIST_FILE}\"`\nNEW_VERSION=`git rev-list HEAD --count`\n/usr/libexec/PListBuddy -c \"Set :CFBundleVersion ${PREV_VERSION%.*}.$(($NEW_VERSION))\" \"${INFOPLIST_FILE}\"\n/usr/libexec/PListBuddy -c \"Set :CFBundleShortVersionString ${PREV_VERSION%.*}.$(($NEW_VERSION))\" \"${INFOPLIST_FILE}\"";
 		};
 		9CF4BB6F8D46621099EC6AD7 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
