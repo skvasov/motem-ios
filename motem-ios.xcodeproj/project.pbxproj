@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5FB9DFCB1DDB8F0B00817A61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB9DFCA1DDB8F0B00817A61 /* AppDelegate.swift */; };
+		5FB9DFCD1DDB8F0B00817A61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB9DFCC1DDB8F0B00817A61 /* ViewController.swift */; };
+		5FB9DFD01DDB8F0B00817A61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FB9DFCE1DDB8F0B00817A61 /* Main.storyboard */; };
+		5FB9DFD21DDB8F0B00817A61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FB9DFD11DDB8F0B00817A61 /* Assets.xcassets */; };
+		5FB9DFD51DDB8F0B00817A61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FB9DFD31DDB8F0B00817A61 /* LaunchScreen.storyboard */; };
+		5FB9DFE01DDB8F0B00817A61 /* motem_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB9DFDF1DDB8F0B00817A61 /* motem_iosTests.swift */; };
+		5FB9DFEB1DDB8F0C00817A61 /* motem_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB9DFEA1DDB8F0C00817A61 /* motem_iosUITests.swift */; };
+		C75ED11943991738DEFEAA73 /* libPods-motem-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6E564314A398BF08D3E8E7 /* libPods-motem-ios.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5FB9DFDC1DDB8F0B00817A61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FB9DFBF1DDB8F0B00817A61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FB9DFC61DDB8F0B00817A61;
+			remoteInfo = "motem-ios";
+		};
+		5FB9DFE71DDB8F0C00817A61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FB9DFBF1DDB8F0B00817A61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FB9DFC61DDB8F0B00817A61;
+			remoteInfo = "motem-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D6E564314A398BF08D3E8E7 /* libPods-motem-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-motem-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FB9DFC71DDB8F0B00817A61 /* motem-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "motem-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FB9DFCA1DDB8F0B00817A61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5FB9DFCC1DDB8F0B00817A61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5FB9DFCF1DDB8F0B00817A61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5FB9DFD11DDB8F0B00817A61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5FB9DFD41DDB8F0B00817A61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5FB9DFD61DDB8F0B00817A61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FB9DFDB1DDB8F0B00817A61 /* motem-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "motem-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FB9DFDF1DDB8F0B00817A61 /* motem_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = motem_iosTests.swift; sourceTree = "<group>"; };
+		5FB9DFE11DDB8F0B00817A61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FB9DFE61DDB8F0C00817A61 /* motem-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "motem-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FB9DFEA1DDB8F0C00817A61 /* motem_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = motem_iosUITests.swift; sourceTree = "<group>"; };
+		5FB9DFEC1DDB8F0C00817A61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACDD7CB7AAB284668F6BF2CE /* Pods-motem-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-motem-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-motem-ios/Pods-motem-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		B8E16E2166F4FB9DAB25606B /* Pods-motem-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-motem-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-motem-ios/Pods-motem-ios.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5FB9DFC41DDB8F0B00817A61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C75ED11943991738DEFEAA73 /* libPods-motem-ios.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FB9DFD81DDB8F0B00817A61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FB9DFE31DDB8F0C00817A61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5FB9DFBE1DDB8F0B00817A61 = {
+			isa = PBXGroup;
+			children = (
+				5FB9DFC91DDB8F0B00817A61 /* motem-ios */,
+				5FB9DFDE1DDB8F0B00817A61 /* motem-iosTests */,
+				5FB9DFE91DDB8F0C00817A61 /* motem-iosUITests */,
+				5FB9DFC81DDB8F0B00817A61 /* Products */,
+				89FA27CB24092A5771363F15 /* Pods */,
+				63FA2EDE6D3FD9CBAC93AED9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5FB9DFC81DDB8F0B00817A61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5FB9DFC71DDB8F0B00817A61 /* motem-ios.app */,
+				5FB9DFDB1DDB8F0B00817A61 /* motem-iosTests.xctest */,
+				5FB9DFE61DDB8F0C00817A61 /* motem-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5FB9DFC91DDB8F0B00817A61 /* motem-ios */ = {
+			isa = PBXGroup;
+			children = (
+				5FB9DFCA1DDB8F0B00817A61 /* AppDelegate.swift */,
+				5FB9DFCC1DDB8F0B00817A61 /* ViewController.swift */,
+				5FB9DFCE1DDB8F0B00817A61 /* Main.storyboard */,
+				5FB9DFD11DDB8F0B00817A61 /* Assets.xcassets */,
+				5FB9DFD31DDB8F0B00817A61 /* LaunchScreen.storyboard */,
+				5FB9DFD61DDB8F0B00817A61 /* Info.plist */,
+			);
+			path = "motem-ios";
+			sourceTree = "<group>";
+		};
+		5FB9DFDE1DDB8F0B00817A61 /* motem-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				5FB9DFDF1DDB8F0B00817A61 /* motem_iosTests.swift */,
+				5FB9DFE11DDB8F0B00817A61 /* Info.plist */,
+			);
+			path = "motem-iosTests";
+			sourceTree = "<group>";
+		};
+		5FB9DFE91DDB8F0C00817A61 /* motem-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5FB9DFEA1DDB8F0C00817A61 /* motem_iosUITests.swift */,
+				5FB9DFEC1DDB8F0C00817A61 /* Info.plist */,
+			);
+			path = "motem-iosUITests";
+			sourceTree = "<group>";
+		};
+		63FA2EDE6D3FD9CBAC93AED9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D6E564314A398BF08D3E8E7 /* libPods-motem-ios.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89FA27CB24092A5771363F15 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ACDD7CB7AAB284668F6BF2CE /* Pods-motem-ios.debug.xcconfig */,
+				B8E16E2166F4FB9DAB25606B /* Pods-motem-ios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5FB9DFC61DDB8F0B00817A61 /* motem-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FB9DFEF1DDB8F0C00817A61 /* Build configuration list for PBXNativeTarget "motem-ios" */;
+			buildPhases = (
+				E6AD50FD8D4BA9B243161089 /* [CP] Check Pods Manifest.lock */,
+				5FB9DFC31DDB8F0B00817A61 /* Sources */,
+				5FB9DFC41DDB8F0B00817A61 /* Frameworks */,
+				5FB9DFC51DDB8F0B00817A61 /* Resources */,
+				0E7C618655DB17AFA6851CC7 /* [CP] Embed Pods Frameworks */,
+				9CF4BB6F8D46621099EC6AD7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "motem-ios";
+			productName = "motem-ios";
+			productReference = 5FB9DFC71DDB8F0B00817A61 /* motem-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5FB9DFDA1DDB8F0B00817A61 /* motem-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FB9DFF21DDB8F0C00817A61 /* Build configuration list for PBXNativeTarget "motem-iosTests" */;
+			buildPhases = (
+				5FB9DFD71DDB8F0B00817A61 /* Sources */,
+				5FB9DFD81DDB8F0B00817A61 /* Frameworks */,
+				5FB9DFD91DDB8F0B00817A61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FB9DFDD1DDB8F0B00817A61 /* PBXTargetDependency */,
+			);
+			name = "motem-iosTests";
+			productName = "motem-iosTests";
+			productReference = 5FB9DFDB1DDB8F0B00817A61 /* motem-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5FB9DFE51DDB8F0C00817A61 /* motem-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FB9DFF51DDB8F0C00817A61 /* Build configuration list for PBXNativeTarget "motem-iosUITests" */;
+			buildPhases = (
+				5FB9DFE21DDB8F0C00817A61 /* Sources */,
+				5FB9DFE31DDB8F0C00817A61 /* Frameworks */,
+				5FB9DFE41DDB8F0C00817A61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FB9DFE81DDB8F0C00817A61 /* PBXTargetDependency */,
+			);
+			name = "motem-iosUITests";
+			productName = "motem-iosUITests";
+			productReference = 5FB9DFE61DDB8F0C00817A61 /* motem-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5FB9DFBF1DDB8F0B00817A61 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Mobexs.com;
+				TargetAttributes = {
+					5FB9DFC61DDB8F0B00817A61 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = Y2V6NG4VN2;
+						ProvisioningStyle = Automatic;
+					};
+					5FB9DFDA1DDB8F0B00817A61 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = Y2V6NG4VN2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5FB9DFC61DDB8F0B00817A61;
+					};
+					5FB9DFE51DDB8F0C00817A61 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = Y2V6NG4VN2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5FB9DFC61DDB8F0B00817A61;
+					};
+				};
+			};
+			buildConfigurationList = 5FB9DFC21DDB8F0B00817A61 /* Build configuration list for PBXProject "motem-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5FB9DFBE1DDB8F0B00817A61;
+			productRefGroup = 5FB9DFC81DDB8F0B00817A61 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5FB9DFC61DDB8F0B00817A61 /* motem-ios */,
+				5FB9DFDA1DDB8F0B00817A61 /* motem-iosTests */,
+				5FB9DFE51DDB8F0C00817A61 /* motem-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5FB9DFC51DDB8F0B00817A61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FB9DFD51DDB8F0B00817A61 /* LaunchScreen.storyboard in Resources */,
+				5FB9DFD21DDB8F0B00817A61 /* Assets.xcassets in Resources */,
+				5FB9DFD01DDB8F0B00817A61 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FB9DFD91DDB8F0B00817A61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FB9DFE41DDB8F0C00817A61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E7C618655DB17AFA6851CC7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-motem-ios/Pods-motem-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CF4BB6F8D46621099EC6AD7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-motem-ios/Pods-motem-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6AD50FD8D4BA9B243161089 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5FB9DFC31DDB8F0B00817A61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FB9DFCD1DDB8F0B00817A61 /* ViewController.swift in Sources */,
+				5FB9DFCB1DDB8F0B00817A61 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FB9DFD71DDB8F0B00817A61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FB9DFE01DDB8F0B00817A61 /* motem_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FB9DFE21DDB8F0C00817A61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FB9DFEB1DDB8F0C00817A61 /* motem_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5FB9DFDD1DDB8F0B00817A61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FB9DFC61DDB8F0B00817A61 /* motem-ios */;
+			targetProxy = 5FB9DFDC1DDB8F0B00817A61 /* PBXContainerItemProxy */;
+		};
+		5FB9DFE81DDB8F0C00817A61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FB9DFC61DDB8F0B00817A61 /* motem-ios */;
+			targetProxy = 5FB9DFE71DDB8F0C00817A61 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5FB9DFCE1DDB8F0B00817A61 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FB9DFCF1DDB8F0B00817A61 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5FB9DFD31DDB8F0B00817A61 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FB9DFD41DDB8F0B00817A61 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5FB9DFED1DDB8F0C00817A61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5FB9DFEE1DDB8F0C00817A61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5FB9DFF01DDB8F0C00817A61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACDD7CB7AAB284668F6BF2CE /* Pods-motem-ios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y2V6NG4VN2;
+				INFOPLIST_FILE = "motem-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mobexs.motem-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5FB9DFF11DDB8F0C00817A61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8E16E2166F4FB9DAB25606B /* Pods-motem-ios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y2V6NG4VN2;
+				INFOPLIST_FILE = "motem-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mobexs.motem-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		5FB9DFF31DDB8F0C00817A61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Y2V6NG4VN2;
+				INFOPLIST_FILE = "motem-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mobexs.motem-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/motem-ios.app/motem-ios";
+			};
+			name = Debug;
+		};
+		5FB9DFF41DDB8F0C00817A61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Y2V6NG4VN2;
+				INFOPLIST_FILE = "motem-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mobexs.motem-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/motem-ios.app/motem-ios";
+			};
+			name = Release;
+		};
+		5FB9DFF61DDB8F0C00817A61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = Y2V6NG4VN2;
+				INFOPLIST_FILE = "motem-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mobexs.motem-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "motem-ios";
+			};
+			name = Debug;
+		};
+		5FB9DFF71DDB8F0C00817A61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = Y2V6NG4VN2;
+				INFOPLIST_FILE = "motem-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mobexs.motem-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "motem-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5FB9DFC21DDB8F0B00817A61 /* Build configuration list for PBXProject "motem-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FB9DFED1DDB8F0C00817A61 /* Debug */,
+				5FB9DFEE1DDB8F0C00817A61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FB9DFEF1DDB8F0C00817A61 /* Build configuration list for PBXNativeTarget "motem-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FB9DFF01DDB8F0C00817A61 /* Debug */,
+				5FB9DFF11DDB8F0C00817A61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FB9DFF21DDB8F0C00817A61 /* Build configuration list for PBXNativeTarget "motem-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FB9DFF31DDB8F0C00817A61 /* Debug */,
+				5FB9DFF41DDB8F0C00817A61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FB9DFF51DDB8F0C00817A61 /* Build configuration list for PBXNativeTarget "motem-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FB9DFF61DDB8F0C00817A61 /* Debug */,
+				5FB9DFF71DDB8F0C00817A61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5FB9DFBF1DDB8F0B00817A61 /* Project object */;
+}
