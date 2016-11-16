@@ -1,19 +1,16 @@
 PODS:
-  - Bond (4.3.1)
   - Crashlytics (3.8.1):
     - Fabric (~> 1.6.3)
   - Fabric (1.6.8)
 
 DEPENDENCIES:
-  - Bond
   - Crashlytics
   - Fabric
 
 SPEC CHECKSUMS:
-  Bond: 55903fc67f09e8e49791a657163cabba1d6fb29d
   Crashlytics: 4391d8df0b125345e9f209c5db6e7f40a6a8435d
   Fabric: 5755268d0171435ab167e3d0878a28a777deaf10
 
-PODFILE CHECKSUM: ec3ce0ac28d146c68692781a0d5d7960dec924ad
+PODFILE CHECKSUM: 963ef8152501d7daae0488c8394f8a24da81e14f
 
 COCOAPODS: 1.0.1

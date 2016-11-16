@@ -16,6 +16,19 @@ enum AuthenticatorState {
 
 class Authenticator: NSObject {
     
-    var state = AuthenticatorState.Unauthorized
+    static let AuthenticatorStateDidChangeNotification = "AuthenticatorStateDidChangeNotification"
     
+    var state: AuthenticatorState {
+        
+        didSet {
+            
+            let notification = Notification(name: Notification.Name(rawValue: Authenticator.AuthenticatorStateDidChangeNotification))
+            NotificationCenter.default.post(notification)
+        }
+    }
+    
+    override init() {
+    
+        self.state = .Unauthorized
+    }
 }

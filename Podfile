@@ -4,7 +4,6 @@ use_frameworks!
 def shared_pods
     pod 'Fabric'
     pod 'Crashlytics'
-    pod 'Bond'
 end
 
 target ‘motem-ios’ do

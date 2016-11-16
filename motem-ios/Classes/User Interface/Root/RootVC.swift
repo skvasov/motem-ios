@@ -16,11 +16,7 @@ class RootVC: ViewController {
         
         super.viewDidLoad()
         
-        //Observable
-        if let client = self.client {
-            
-            client.authenticator.addObserver(self, forKeyPath: "state", options: .new, context: nil)
-        }
+        NotificationCenter.default.addObserver(self, selector: #selector(RootVC.notificationsHandler(notification:)), name: NSNotification.Name(rawValue: Authenticator.AuthenticatorStateDidChangeNotification), object: nil)
 
         authenticatorStateDidChange()
     }
@@ -35,17 +31,11 @@ class RootVC: ViewController {
         }
     }
     
-    // MARK: - KVO
+    // MARK: - Notifications handler
     
-    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+    func notificationsHandler(notification: Notification) {
         
-        if let keyPath = keyPath {
-            
-            if (keyPath == "state") {
-                
-                self.authenticatorStateDidChange()
-            }
-        }
+        self.authenticatorStateDidChange()
     }
     
     // MARK: - Logic
@@ -86,9 +76,6 @@ class RootVC: ViewController {
     
     deinit {
         
-        if let client = self.client {
-            
-            client.authenticator.removeObserver(self, forKeyPath: "state")
-        }
+        NotificationCenter.default.removeObserver(self)
     }
 }
