@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		55177957CA791C28DC875E78 /* Pods_motem_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2ACD91BC7938226EFA5B0F2 /* Pods_motem_ios.framework */; };
+		5F15719D1DDE4EFD007440D3 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F15719C1DDE4EFD007440D3 /* Authentication.swift */; };
+		5F15719F1DDE4FD3007440D3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F15719E1DDE4FD3007440D3 /* User.swift */; };
 		5FB9DFE01DDB8F0B00817A61 /* motem_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB9DFDF1DDB8F0B00817A61 /* motem_iosTests.swift */; };
 		5FB9DFEB1DDB8F0C00817A61 /* motem_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB9DFEA1DDB8F0C00817A61 /* motem_iosUITests.swift */; };
 		5FB9E0051DDB93F200817A61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FB9DFFD1DDB93F200817A61 /* Assets.xcassets */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F15719C1DDE4EFD007440D3 /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		5F15719E1DDE4FD3007440D3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5FB9DFC71DDB8F0B00817A61 /* motem-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "motem-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB9DFDB1DDB8F0B00817A61 /* motem-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "motem-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB9DFDF1DDB8F0B00817A61 /* motem_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = motem_iosTests.swift; sourceTree = "<group>"; };
@@ -95,6 +99,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F1571981DDE48E2007440D3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5F15719B1DDE4ED1007440D3 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				5F15719C1DDE4EFD007440D3 /* Authentication.swift */,
+				5F15719E1DDE4FD3007440D3 /* User.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		5FB9DFBE1DDB8F0B00817A61 = {
 			isa = PBXGroup;
 			children = (
@@ -149,7 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				5FB9E00A1DDB94A000817A61 /* AppDelegate.swift */,
-				5FB9E00B1DDB94A000817A61 /* Categories */,
+				5F1571981DDE48E2007440D3 /* Extensions */,
 				5FB9E00C1DDB94A000817A61 /* Middleware */,
 				5FB9E00D1DDB94A000817A61 /* Models */,
 				5FB9E00E1DDB94A000817A61 /* Shared */,
@@ -175,13 +195,6 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		5FB9E00B1DDB94A000817A61 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Categories;
-			sourceTree = "<group>";
-		};
 		5FB9E00C1DDB94A000817A61 /* Middleware */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				5FB9E0221DDB991700817A61 /* Client.swift */,
+				5F15719B1DDE4ED1007440D3 /* Entities */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -488,8 +502,10 @@
 				5FB9E0281DDBA62C00817A61 /* LoginVC.swift in Sources */,
 				5FB9E01E1DDB980100817A61 /* RootVC.swift in Sources */,
 				5FB9E0231DDB991700817A61 /* Client.swift in Sources */,
+				5F15719F1DDE4FD3007440D3 /* User.swift in Sources */,
 				5FB9E0131DDB94A000817A61 /* AppDelegate.swift in Sources */,
 				5FB9E02C1DDBA78B00817A61 /* MainVC.swift in Sources */,
+				5F15719D1DDE4EFD007440D3 /* Authentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,6 +651,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = Y2V6NG4VN2;
 				INFOPLIST_FILE = "motem-ios/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mobexs.motem-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -652,6 +669,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = Y2V6NG4VN2;
 				INFOPLIST_FILE = "motem-ios/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mobexs.motem-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
