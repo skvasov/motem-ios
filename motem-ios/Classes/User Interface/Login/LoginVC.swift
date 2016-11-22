@@ -47,22 +47,28 @@ class LoginVC: ViewController {
         let params = ["username" : username,
                       "password" : password]
         
-        Alamofire.request("http://otmburger.com/api/signup/login", method: .post, parameters: params, encoding: URLEncoding.default, headers: nil).responseData(completionHandler: { response in
+        if let client = self.client {
             
-            guard let data = response.result.value else {
+            client.sessionManager.request(AuthenticationRouter.login(parameters: params)).responseData(completionHandler: { response in
                 
-                self.showLoginError()
-                return
-            }
-            
-            let json = JSON(data: data)
-            let authentication = Authentication(json: json)
-            
-            if let client = self.client, let sessionToekn = authentication.sessionToken {
+                guard let data = response.result.value else {
+                    
+                    self.showLoginError()
+                    return
+                }
                 
+                let json = JSON(data: data)
+                let authentication = Authentication(json: json)
+                
+                guard let sessionToken = authentication.sessionToken else {
+                    
+                    self.showLoginError()
+                    return
+                }
+                
+                client.sessionManager.adapter = SessionTokenAdapter(sessionToken: sessionToken)
                 client.authenticator.state = .Authorized
-            }
-        })
+            })
+        }
     }
-
 }

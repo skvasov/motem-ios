@@ -7,12 +7,19 @@
 //
 
 import Foundation
+import Alamofire
 
 class Client: NSObject {
     
-    var authenticator: Authenticator
+    static let BaseURL: String = "http://otmburger.com"
+    
+    let sessionManager: SessionManager
+    let authenticator: Authenticator
     
     override init() {
+        
+        self.sessionManager = SessionManager()
+        self.sessionManager.startRequestsImmediately = true
         
         self.authenticator = Authenticator()
     }

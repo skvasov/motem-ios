@@ -10,6 +10,15 @@
 		55177957CA791C28DC875E78 /* Pods_motem_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2ACD91BC7938226EFA5B0F2 /* Pods_motem_ios.framework */; };
 		5F15719D1DDE4EFD007440D3 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F15719C1DDE4EFD007440D3 /* Authentication.swift */; };
 		5F15719F1DDE4FD3007440D3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F15719E1DDE4FD3007440D3 /* User.swift */; };
+		5F1571A31DE38FF2007440D3 /* SessionTokenAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1571A21DE38FF2007440D3 /* SessionTokenAdapter.swift */; };
+		5F4D85711DE4CE8E00E60BB0 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4D85701DE4CE8E00E60BB0 /* Place.swift */; };
+		5F4D85741DE4CF0900E60BB0 /* AuthenticationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4D85731DE4CF0900E60BB0 /* AuthenticationRouter.swift */; };
+		5F4D85781DE4D22F00E60BB0 /* PlacesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4D85761DE4D22F00E60BB0 /* PlacesVC.swift */; };
+		5F4D85791DE4D22F00E60BB0 /* PlacesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F4D85771DE4D22F00E60BB0 /* PlacesVC.xib */; };
+		5F4D857C1DE4D2A800E60BB0 /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4D857A1DE4D2A800E60BB0 /* PlaceCell.swift */; };
+		5F4D857D1DE4D2A800E60BB0 /* PlaceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F4D857B1DE4D2A800E60BB0 /* PlaceCell.xib */; };
+		5F4D857F1DE4D3B800E60BB0 /* PlaceCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4D857E1DE4D3B800E60BB0 /* PlaceCellController.swift */; };
+		5F4D85811DE4D76B00E60BB0 /* PlaceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4D85801DE4D76B00E60BB0 /* PlaceRouter.swift */; };
 		5FB9DFE01DDB8F0B00817A61 /* motem_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB9DFDF1DDB8F0B00817A61 /* motem_iosTests.swift */; };
 		5FB9DFEB1DDB8F0C00817A61 /* motem_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB9DFEA1DDB8F0C00817A61 /* motem_iosUITests.swift */; };
 		5FB9E0051DDB93F200817A61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FB9DFFD1DDB93F200817A61 /* Assets.xcassets */; };
@@ -47,6 +56,15 @@
 /* Begin PBXFileReference section */
 		5F15719C1DDE4EFD007440D3 /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		5F15719E1DDE4FD3007440D3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5F1571A21DE38FF2007440D3 /* SessionTokenAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionTokenAdapter.swift; sourceTree = "<group>"; };
+		5F4D85701DE4CE8E00E60BB0 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		5F4D85731DE4CF0900E60BB0 /* AuthenticationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationRouter.swift; sourceTree = "<group>"; };
+		5F4D85761DE4D22F00E60BB0 /* PlacesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesVC.swift; sourceTree = "<group>"; };
+		5F4D85771DE4D22F00E60BB0 /* PlacesVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlacesVC.xib; sourceTree = "<group>"; };
+		5F4D857A1DE4D2A800E60BB0 /* PlaceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
+		5F4D857B1DE4D2A800E60BB0 /* PlaceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaceCell.xib; sourceTree = "<group>"; };
+		5F4D857E1DE4D3B800E60BB0 /* PlaceCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceCellController.swift; sourceTree = "<group>"; };
+		5F4D85801DE4D76B00E60BB0 /* PlaceRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceRouter.swift; sourceTree = "<group>"; };
 		5FB9DFC71DDB8F0B00817A61 /* motem-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "motem-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB9DFDB1DDB8F0B00817A61 /* motem-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "motem-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB9DFDF1DDB8F0B00817A61 /* motem_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = motem_iosTests.swift; sourceTree = "<group>"; };
@@ -111,8 +129,30 @@
 			children = (
 				5F15719C1DDE4EFD007440D3 /* Authentication.swift */,
 				5F15719E1DDE4FD3007440D3 /* User.swift */,
+				5F4D85701DE4CE8E00E60BB0 /* Place.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		5F4D85721DE4CEF400E60BB0 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				5F4D85731DE4CF0900E60BB0 /* AuthenticationRouter.swift */,
+				5F4D85801DE4D76B00E60BB0 /* PlaceRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		5F4D85751DE4D21300E60BB0 /* Places */ = {
+			isa = PBXGroup;
+			children = (
+				5F4D857A1DE4D2A800E60BB0 /* PlaceCell.swift */,
+				5F4D857B1DE4D2A800E60BB0 /* PlaceCell.xib */,
+				5F4D857E1DE4D3B800E60BB0 /* PlaceCellController.swift */,
+				5F4D85761DE4D22F00E60BB0 /* PlacesVC.swift */,
+				5F4D85771DE4D22F00E60BB0 /* PlacesVC.xib */,
+			);
+			path = Places;
 			sourceTree = "<group>";
 		};
 		5FB9DFBE1DDB8F0B00817A61 = {
@@ -200,6 +240,8 @@
 			children = (
 				5FB9E0151DDB94C300817A61 /* motem-ios-Bridging-Header.h */,
 				5FB9E0241DDBA27400817A61 /* Authenticator.swift */,
+				5F4D85721DE4CEF400E60BB0 /* Routers */,
+				5F1571A21DE38FF2007440D3 /* SessionTokenAdapter.swift */,
 			);
 			path = Middleware;
 			sourceTree = "<group>";
@@ -242,6 +284,7 @@
 			children = (
 				5FB9E0191DDB970500817A61 /* Login */,
 				5FB9E01A1DDB970500817A61 /* Main */,
+				5F4D85751DE4D21300E60BB0 /* Places */,
 				5FB9E01B1DDB970500817A61 /* Root */,
 			);
 			path = "User Interface";
@@ -409,8 +452,10 @@
 				5FB9E0291DDBA62C00817A61 /* LoginVC.xib in Resources */,
 				5FB9E01F1DDB980100817A61 /* RootVC.xib in Resources */,
 				5FB9E0081DDB93F200817A61 /* Info.plist in Resources */,
+				5F4D857D1DE4D2A800E60BB0 /* PlaceCell.xib in Resources */,
 				5FB9E02D1DDBA78B00817A61 /* MainVC.xib in Resources */,
 				5FB9E0051DDB93F200817A61 /* Assets.xcassets in Resources */,
+				5F4D85791DE4D22F00E60BB0 /* PlacesVC.xib in Resources */,
 				5FB9E0061DDB93F200817A61 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,11 +543,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FB9E0251DDBA27400817A61 /* Authenticator.swift in Sources */,
+				5F4D857F1DE4D3B800E60BB0 /* PlaceCellController.swift in Sources */,
+				5F4D85811DE4D76B00E60BB0 /* PlaceRouter.swift in Sources */,
 				5FB9E0211DDB988C00817A61 /* ViewController.swift in Sources */,
+				5F4D85741DE4CF0900E60BB0 /* AuthenticationRouter.swift in Sources */,
 				5FB9E0281DDBA62C00817A61 /* LoginVC.swift in Sources */,
+				5F4D85711DE4CE8E00E60BB0 /* Place.swift in Sources */,
 				5FB9E01E1DDB980100817A61 /* RootVC.swift in Sources */,
 				5FB9E0231DDB991700817A61 /* Client.swift in Sources */,
 				5F15719F1DDE4FD3007440D3 /* User.swift in Sources */,
+				5F1571A31DE38FF2007440D3 /* SessionTokenAdapter.swift in Sources */,
+				5F4D857C1DE4D2A800E60BB0 /* PlaceCell.swift in Sources */,
+				5F4D85781DE4D22F00E60BB0 /* PlacesVC.swift in Sources */,
 				5FB9E0131DDB94A000817A61 /* AppDelegate.swift in Sources */,
 				5FB9E02C1DDBA78B00817A61 /* MainVC.swift in Sources */,
 				5F15719D1DDE4EFD007440D3 /* Authentication.swift in Sources */,
