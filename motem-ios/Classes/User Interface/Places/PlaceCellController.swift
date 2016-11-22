@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftyJSON
+import AlamofireImage
 
 protocol PlaceCellControllerDelegate: class {
     
@@ -39,6 +40,10 @@ class PlaceCellController: PlaceCellDelegate {
         if let cell = self.cell {
             
             cell.nameLabel?.text = self.place.name
+            if let imageURL = self.place.imageURL, let url = URL(string: imageURL)  {
+
+                cell.backgroundImageView?.af_setImage(withURL: url)
+            }
         }
     }
     
@@ -49,6 +54,7 @@ class PlaceCellController: PlaceCellDelegate {
         if let cell  = self.cell {
             
             cell.nameLabel?.text = ""
+            cell.backgroundImageView?.image = nil
         }
         
         self.cell = nil

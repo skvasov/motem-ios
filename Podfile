@@ -6,6 +6,7 @@ def shared_pods
     pod 'Crashlytics'
     pod 'Alamofire'
     pod 'SwiftyJSON', :git => 'https://github.com/acegreen/SwiftyJSON.git', :branch => 'swift3'
+    pod 'AlamofireImage'
 end
 
 target ‘motem-ios’ do

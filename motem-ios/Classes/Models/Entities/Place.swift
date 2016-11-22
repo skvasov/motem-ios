@@ -17,6 +17,6 @@ class Place {
     init(json: JSON) {
         
         self.name = json["name"].stringValue
-        self.imageURL = json["imageUrl"].stringValue
+        self.imageURL = json["imageURL"].stringValue
     }
 }
