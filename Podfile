@@ -9,6 +9,7 @@ def shared_pods
     pod 'PKHUD'
     pod 'AlamofireObjectMapper'
     pod 'DGElasticPullToRefresh'
+    pod 'UIScrollView-InfiniteScroll'
 end
 
 target ‘motem-ios’ do

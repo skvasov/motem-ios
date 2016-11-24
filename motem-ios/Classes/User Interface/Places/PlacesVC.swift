@@ -16,6 +16,7 @@ class PlacesVC: ViewController, UICollectionViewDelegate, UICollectionViewDataSo
     
     @IBOutlet weak var collectionView: UICollectionView?
     
+    var currentPage = 0
     var cellControllers: [PlaceCellController] = []
     
     // MARK: - Lazy getters
@@ -44,8 +45,10 @@ class PlacesVC: ViewController, UICollectionViewDelegate, UICollectionViewDataSo
             loadingView.tintColor = UIColor.black
             
             collectionView.dg_addPullToRefreshWithActionHandler({ [unowned self] in
-                
-                self.loadData()
+            
+                self.currentPage = 0
+                self.cellControllers = []
+                self.loadNextPage()
                 
             }, loadingView: loadingView)
             
@@ -53,16 +56,19 @@ class PlacesVC: ViewController, UICollectionViewDelegate, UICollectionViewDataSo
             collectionView.dg_setPullToRefreshBackgroundColor(UIColor.white)
         }
         
-        self.loadData()
+        self.loadNextPage()
     }
     
-    func loadData() {
+    func loadNextPage() {
+        
+        self.currentPage += 1
         
         if let client = self.client {
             
             HUD.show(HUDContentType.systemActivity)
             
-            let params = ["q": "burger"]
+            let params: [String : Any] = ["page": self.currentPage,
+                                          "perPage": 25]
             
             client.sessionManager.request(PlaceRouter.search(parameters: params)).responseArray(keyPath: "places") { [weak self] (response: DataResponse<[Place]>) in
                 

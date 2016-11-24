@@ -11,6 +11,7 @@ PODS:
   - Fabric (1.6.8)
   - ObjectMapper (2.2.1)
   - PKHUD (4.0.0)
+  - UIScrollView-InfiniteScroll (0.9.1)
 
 DEPENDENCIES:
   - Alamofire
@@ -20,6 +21,7 @@ DEPENDENCIES:
   - DGElasticPullToRefresh
   - Fabric
   - PKHUD
+  - UIScrollView-InfiniteScroll
 
 SPEC CHECKSUMS:
   Alamofire: fef59f00388f267e52d9b432aa5d93dc97190f14
@@ -30,7 +32,8 @@ SPEC CHECKSUMS:
   Fabric: 5755268d0171435ab167e3d0878a28a777deaf10
   ObjectMapper: 41e43e1a89f8060ef5ea5d04ba852e269a621d68
   PKHUD: 2bb45c936bb8afa39f3cd33ec14e8cc89f624255
+  UIScrollView-InfiniteScroll: 14e204c50ca4040467e1cbfa141dad7a18919b56
 
-PODFILE CHECKSUM: 5f83c39706882d8db42980beabe2dfbf19ce7128
+PODFILE CHECKSUM: 8a411794c99e612ac2d5caddf586f38ec8dea00a
 
 COCOAPODS: 1.1.1
