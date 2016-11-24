@@ -8,6 +8,7 @@ def shared_pods
     pod 'AlamofireImage'
     pod 'PKHUD'
     pod 'AlamofireObjectMapper'
+    pod 'DGElasticPullToRefresh'
 end
 
 target ‘motem-ios’ do

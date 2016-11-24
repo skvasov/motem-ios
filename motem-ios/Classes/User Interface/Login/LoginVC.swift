@@ -48,16 +48,32 @@ class LoginVC: ViewController {
         
         if let client = self.client {
             
-            client.sessionManager.request(AuthenticationRouter.login(parameters: params)).responseObject { (response: DataResponse<Authentication>) in
+            client.sessionManager.request(AuthenticationRouter.login(parameters: params)).responseObject { [weak self] (response: DataResponse<Authentication>) in
                 
-                guard let authentication = response.result.value, let sessionToken = authentication.sessionToken else {
+                guard let weakSelf = self else {
                     
-                    self.showLoginError()
-                    return
+                    return;
                 }
                 
-                client.sessionManager.adapter = SessionTokenAdapter(sessionToken: sessionToken)
-                client.authenticator.state = .Authorized
+                switch response.result {
+                    
+                case .success:
+                    
+                    guard let authentication = response.result.value, let sessionToken = authentication.sessionToken else {
+                        
+                        weakSelf.showLoginError()
+                        return
+                    }
+                    
+                    client.sessionManager.adapter = SessionTokenAdapter(sessionToken: sessionToken)
+                    client.authenticator.state = .Authorized
+                    
+                case .failure:
+                    
+                    weakSelf.showLoginError()
+                }
+                
+                
             }
         }
     }

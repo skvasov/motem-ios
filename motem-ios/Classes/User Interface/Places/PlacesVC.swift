@@ -10,6 +10,7 @@ import UIKit
 import PKHUD
 import AlamofireObjectMapper
 import Alamofire
+import DGElasticPullToRefresh
 
 class PlacesVC: ViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, PlaceCellControllerDelegate {
     
@@ -34,8 +35,28 @@ class PlacesVC: ViewController, UICollectionViewDelegate, UICollectionViewDataSo
     {
         super.viewDidLoad()
         
-        self.collectionView?.collectionViewLayout = self.layout
-        self.collectionView?.register(UINib(nibName: "PlaceCell", bundle: nil), forCellWithReuseIdentifier: PlaceCell.ReuseIdentifier)
+        if let collectionView = self.collectionView {
+
+            collectionView.collectionViewLayout = self.layout
+            collectionView.register(UINib(nibName: "PlaceCell", bundle: nil), forCellWithReuseIdentifier: PlaceCell.ReuseIdentifier)
+            
+            let loadingView = DGElasticPullToRefreshLoadingViewCircle()
+            loadingView.tintColor = UIColor.black
+            
+            collectionView.dg_addPullToRefreshWithActionHandler({ [unowned self] in
+                
+                self.loadData()
+                
+            }, loadingView: loadingView)
+            
+            collectionView.dg_setPullToRefreshFillColor(UIColor.white)
+            collectionView.dg_setPullToRefreshBackgroundColor(UIColor.white)
+        }
+        
+        self.loadData()
+    }
+    
+    func loadData() {
         
         if let client = self.client {
             
@@ -43,9 +64,14 @@ class PlacesVC: ViewController, UICollectionViewDelegate, UICollectionViewDataSo
             
             let params = ["q": "burger"]
             
-            client.sessionManager.request(PlaceRouter.search(parameters: params)).responseArray(keyPath: "places") { (response: DataResponse<[Place]>) in
+            client.sessionManager.request(PlaceRouter.search(parameters: params)).responseArray(keyPath: "places") { [weak self] (response: DataResponse<[Place]>) in
                 
                 HUD.hide()
+                
+                guard let weakSelf = self else {
+                    
+                    return
+                }
                 
                 switch response.result {
                     
@@ -53,24 +79,36 @@ class PlacesVC: ViewController, UICollectionViewDelegate, UICollectionViewDataSo
                     
                     guard let places = response.result.value else {
                         
+                        weakSelf.showDataLoadingError(error: nil)
                         return
                     }
                     
                     let cellControllers = places.map({ (place) -> PlaceCellController in
                         
                         let cellController = PlaceCellController(place: place)
-                        cellController.delegate = self
+                        cellController.delegate = weakSelf
                         return cellController
                     })
                     
-                    self.cellControllers.append(contentsOf: cellControllers)
-                    self.collectionView?.reloadData()
+                    weakSelf.cellControllers.append(contentsOf: cellControllers)
+                    
+                    if let collectionView = weakSelf.collectionView {
+
+                        collectionView.reloadData()
+                        collectionView.dg_stopLoading()
+                    }
                     
                 case .failure(let error):
-                    print(error)
+                    
+                    weakSelf.showDataLoadingError(error: error)
                 }
             }
         }
+    }
+    
+    func showDataLoadingError(error: Error?) {
+    
+        print("fail")
     }
     
     // MARK: - UICollectionViewDataSource
@@ -103,4 +141,17 @@ class PlacesVC: ViewController, UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     // MARK: - PlaceCellControllerDelegate
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    deinit {
+        
+        if let collectionView = self.collectionView {
+        
+            collectionView.dg_removePullToRefresh()
+        }
+    }
 }
