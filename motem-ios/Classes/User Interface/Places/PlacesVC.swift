@@ -7,8 +7,9 @@
 //
 
 import UIKit
-import SwiftyJSON
 import PKHUD
+import AlamofireObjectMapper
+import Alamofire
 
 class PlacesVC: ViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, PlaceCellControllerDelegate {
     
@@ -41,7 +42,8 @@ class PlacesVC: ViewController, UICollectionViewDelegate, UICollectionViewDataSo
             HUD.show(HUDContentType.systemActivity)
             
             let params = ["q": "burger"]
-            client.sessionManager.request(PlaceRouter.search(parameters: params)).responseData(completionHandler: { response in
+            
+            client.sessionManager.request(PlaceRouter.search(parameters: params)).responseArray(keyPath: "places") { (response: DataResponse<[Place]>) in
                 
                 HUD.hide()
                 
@@ -49,29 +51,25 @@ class PlacesVC: ViewController, UICollectionViewDelegate, UICollectionViewDataSo
                     
                 case .success:
                     
-                    guard let data = response.result.value else {
-                            
+                    guard let places = response.result.value else {
+                        
                         return
                     }
+                    
+                    let cellControllers = places.map({ (place) -> PlaceCellController in
                         
-                    let json = JSON(data: data)
-                    let cellControllers = json["places"].arrayValue.map({ (json) -> PlaceCellController in
-                            
-                        let place = Place(json: json)
                         let cellController = PlaceCellController(place: place)
                         cellController.delegate = self
                         return cellController
                     })
-                        
+                    
                     self.cellControllers.append(contentsOf: cellControllers)
                     self.collectionView?.reloadData()
-
+                    
                 case .failure(let error):
                     print(error)
                 }
-                
-                
-            })
+            }
         }
     }
     

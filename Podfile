@@ -5,9 +5,9 @@ def shared_pods
     pod 'Fabric'
     pod 'Crashlytics'
     pod 'Alamofire'
-    pod 'SwiftyJSON'
     pod 'AlamofireImage'
     pod 'PKHUD'
+    pod 'AlamofireObjectMapper'
 end
 
 target ‘motem-ios’ do

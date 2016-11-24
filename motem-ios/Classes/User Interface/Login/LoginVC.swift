@@ -8,7 +8,6 @@
 
 import UIKit
 import Alamofire
-import SwiftyJSON
 
 class LoginVC: ViewController {
     
@@ -49,18 +48,9 @@ class LoginVC: ViewController {
         
         if let client = self.client {
             
-            client.sessionManager.request(AuthenticationRouter.login(parameters: params)).responseData(completionHandler: { response in
+            client.sessionManager.request(AuthenticationRouter.login(parameters: params)).responseObject { (response: DataResponse<Authentication>) in
                 
-                guard let data = response.result.value else {
-                    
-                    self.showLoginError()
-                    return
-                }
-                
-                let json = JSON(data: data)
-                let authentication = Authentication(json: json)
-                
-                guard let sessionToken = authentication.sessionToken else {
+                guard let authentication = response.result.value, let sessionToken = authentication.sessionToken else {
                     
                     self.showLoginError()
                     return
@@ -68,7 +58,7 @@ class LoginVC: ViewController {
                 
                 client.sessionManager.adapter = SessionTokenAdapter(sessionToken: sessionToken)
                 client.authenticator.state = .Authorized
-            })
+            }
         }
     }
 }

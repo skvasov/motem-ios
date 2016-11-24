@@ -7,18 +7,23 @@
 //
 
 import Foundation
-import SwiftyJSON
+import AlamofireObjectMapper
+import ObjectMapper
 
-class User {
+class User: Mappable {
     
     var name: String?
     var email: String?
     var imageURL: String?
     
-    init(json: JSON) {
+    required init?(map: Map){
         
-        self.name = json["name"].stringValue
-        self.email = json["email"].stringValue
-        self.imageURL = json["imageUrl"].stringValue
+    }
+    
+    func mapping(map: Map) {
+        
+        name <- map["name"]
+        email <- map["email"]
+        imageURL <- map["imageUrl"]
     }
 }

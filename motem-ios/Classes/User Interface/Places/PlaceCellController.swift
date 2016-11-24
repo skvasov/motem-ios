@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SwiftyJSON
 import AlamofireImage
 
 protocol PlaceCellControllerDelegate: class {

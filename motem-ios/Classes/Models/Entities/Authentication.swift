@@ -7,16 +7,21 @@
 //
 
 import Foundation
-import SwiftyJSON
+import AlamofireObjectMapper
+import ObjectMapper
 
-class Authentication {
+class Authentication: Mappable {
     
     var profile: User?
     var sessionToken: String?
     
-    init(json: JSON) {
+    required init?(map: Map){
         
-        self.sessionToken = json["sessionToken"].stringValue
-        self.profile = User(json: json["profile"])
+    }
+    
+    func mapping(map: Map) {
+        
+        profile <- map["profile"]
+        sessionToken <- map["sessionToken"]
     }
 }
